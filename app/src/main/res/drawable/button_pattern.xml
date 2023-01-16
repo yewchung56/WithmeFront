@@ -18,10 +18,7 @@
                 android:bottom="10dp"/>
         </shape>
     </item>
-
     <!-- pressed -->
-
-
     <item android:state_focused="true">
         <shape>
             <gradient
@@ -42,7 +39,6 @@
     </item>
     <!-- focused -->
 
-
     <item>
         <shape>
             <gradient
@@ -62,4 +58,23 @@
         </shape>
     </item>
     <!-- default -->
+    <item android:state_unselect="true">
+        <shape>
+            <gradient
+                android:startColor="#E4E2E2"
+                android:endColor="#E4E2E2"
+                android:angle="90" />
+            <stroke
+                android:width="2dp"
+                android:color="#E4E2E2" />
+            <corners
+                android:radius="10dp" />
+            <padding
+                android:left="10dp"
+                android:top="10dp"
+                android:right="10dp"
+                android:bottom="10dp"/>
+        </shape>
+    </item>
+    <!-- unselected -->
 </selector>

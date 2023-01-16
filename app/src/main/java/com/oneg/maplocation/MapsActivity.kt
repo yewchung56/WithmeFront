@@ -134,7 +134,7 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
         //카메라위치
         val cameraOption = CameraPosition.Builder()
             .target(myLocation)
-            .zoom(16f)
+            .zoom(15f)
             .build()
         val camera = CameraUpdateFactory.newCameraPosition(cameraOption)
 
