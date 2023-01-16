@@ -12,7 +12,7 @@
         android:layout_height="26dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:layout_marginLeft="155.5dp"
+        android:layout_marginLeft="182dp"
         android:layout_marginTop="53dp"
         android:gravity="top"
         android:text="로그인"
@@ -20,15 +20,15 @@
 
     <TextView
         android:id="@+id/idtext"
-        android:text="아이디"
         android:layout_width="33dp"
         android:layout_height="17dp"
         android:layout_alignParentLeft="true"
-        android:layout_marginLeft="16dp"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="110dp"
+        android:layout_marginLeft="39dp"
+        android:layout_marginTop="112dp"
         android:gravity="top"
-        android:textAppearance="@style/idtext"/>
+        android:text="아이디"
+        android:textAppearance="@style/idtext" />
 
     <EditText
         android:id="@+id/edid"
@@ -36,11 +36,11 @@
         android:layout_height="44dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="133dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="135dp"
         android:background="@drawable/rectangle_1"
         android:hint="휴대폰 번호를 입력해 주세요."
-        android:textAppearance="@style/idput"/>
+        android:textAppearance="@style/idput" />
 
     <TextView
         android:id="@+id/passwordtext"
@@ -48,11 +48,11 @@
         android:layout_height="17dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="192dp"
+        android:layout_marginLeft="42dp"
+        android:layout_marginTop="191dp"
         android:gravity="top"
         android:text="비밀번호"
-        android:textAppearance="@style/passtext"/>
+        android:textAppearance="@style/passtext" />
 
     <EditText
         android:id="@+id/edpassword"
@@ -60,11 +60,12 @@
         android:layout_height="44dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:layout_marginLeft="16dp"
+        android:layout_marginLeft="43dp"
         android:layout_marginTop="215dp"
         android:background="@drawable/rectangle_1"
         android:hint="비밀번호를 입력해 주세요."
         android:textAppearance="@style/passput" />
+
 
     <Button
         android:id="@+id/loginclick"
@@ -72,7 +73,7 @@
         android:layout_height="44dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:layout_marginLeft="16dp"
+        android:layout_marginLeft="44dp"
         android:layout_marginTop="284dp"
         android:background="@drawable/rectangle_2"
         android:text="로그인"
@@ -84,7 +85,7 @@
         android:layout_height="17dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:layout_marginLeft="146.5dp"
+        android:layout_marginLeft="176dp"
         android:layout_marginTop="340dp"
         android:gravity="top"
         android:text="비밀번호 찾기"
@@ -96,11 +97,10 @@
         android:layout_height="22dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:layout_marginLeft="146.5dp"
-        android:layout_marginTop="338dp"
+        android:layout_marginLeft="171dp"
+        android:layout_marginTop="340dp"
         android:background="@android:color/transparent"
         android:gravity="top" />
-
 
     <TextView
         android:id="@+id/yettext"
@@ -108,33 +108,45 @@
         android:layout_height="17dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:layout_marginLeft="96.5dp"
-        android:layout_marginTop="640.49dp"
+        android:layout_marginLeft="123dp"
+        android:layout_marginTop="598dp"
         android:gravity="top"
         android:text="아직 회원이 아니신가요?"
-        android:textAppearance="@style/yettext"/>
+        android:textAppearance="@style/yettext" />
 
     <TextView
         android:id="@+id/membership"
         android:layout_width="44dp"
         android:layout_height="17dp"
         android:layout_alignParentLeft="true"
-        android:layout_marginLeft="220.5dp"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="640.49dp"
+        android:layout_marginLeft="246dp"
+        android:layout_marginTop="598dp"
+        android:gravity="top"
         android:text="회원가입"
-        android:textAppearance="@style/membership"
-        android:gravity="top" />
+        android:textAppearance="@style/membership" />
+
     <Button
         android:id="@+id/membershipbtn"
         android:layout_width="47dp"
         android:layout_height="20dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:layout_marginLeft="220.5dp"
-        android:layout_marginTop="639dp"
+        android:layout_marginLeft="248dp"
+        android:layout_marginTop="597dp"
         android:background="@android:color/transparent"
-        android:gravity="top"/>
+        android:gravity="top" />
+
+    <ImageButton
+        android:id="@+id/kakao"
+        android:layout_width="184dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="114dp"
+        android:layout_marginTop="390dp"
+        android:padding="0dp"
+        android:src="@drawable/kakao_login" />
 
 
 </RelativeLayout>
