@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">login</string>
+    <string name="kakao_app_key">49ef6edfbf96118d95cfd6f0754d9ead</string>
+    <string name="kakao_native_key">kakao49ef6edfbf96118d95cfd6f0754d9ead</string>
 </resources>
