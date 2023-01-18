@@ -13,7 +13,8 @@
         <entry key="app/src/main/res/font/notosanskr_regular.xml" value="0.1" />
         <entry key="app/src/main/res/font/notosanskr_thin.xml" value="0.1" />
         <entry key="app/src/main/res/font/notosanskrmedium.xml" value="0.1935185185185185" />
-        <entry key="app/src/main/res/layout/activity_maps.xml" value="0.335" />
+        <entry key="app/src/main/res/layout/activity_maps.xml" value="0.17495987158908508" />
+        <entry key="app/src/main/res/layout/fragment_history.xml" value="0.1" />
       </map>
     </option>
   </component>

@@ -1,4 +1,8 @@
 <resources>
     <string name="app_name">MapLocation</string>
     <string name="title_activity_maps">MapsActivity</string>
+    <string name="hello_blank_fragment" />
+    <string name="동네인증">동네인증</string>
+    <string name="현재위치">현재 위치</string>
+    <string name="이위치에서위드미하기">이 위치에서 위드미 하기</string>
 </resources>

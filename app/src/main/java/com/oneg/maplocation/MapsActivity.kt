@@ -1,6 +1,7 @@
 package com.oneg.maplocation
 
 import android.annotation.SuppressLint
+import android.content.Intent
 import android.content.pm.PackageManager.PERMISSION_GRANTED
 import android.graphics.Bitmap
 import android.graphics.drawable.BitmapDrawable
@@ -12,6 +13,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Looper
 import android.util.Log
+import android.view.animation.Transformation
 import android.widget.TextView
 import android.widget.Toast
 import androidx.core.app.ActivityCompat
@@ -24,6 +26,7 @@ import com.google.android.gms.maps.OnMapReadyCallback
 import com.google.android.gms.maps.SupportMapFragment
 import com.google.android.gms.maps.model.*
 import com.oneg.maplocation.databinding.ActivityMapsBinding
+import kotlinx.android.synthetic.main.activity_maps.*
 import java.io.IOException
 import java.util.*
 import java.util.jar.Manifest
@@ -39,6 +42,10 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
         super.onCreate(savedInstanceState)
         binding = ActivityMapsBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        button.setOnClickListener {
+            startActivity(Intent(this@MapsActivity,NaviActivity::class.java))
+        }
 
         if(isPermitted()){
             startProcess()
@@ -141,6 +148,7 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
         mMap.addMarker(marker)
         mMap.moveCamera(camera)
     }
+    @SuppressLint("MissingSuperCall")
     override fun onRequestPermissionsResult(
         requestCode: Int,
         permissions: Array<out String>,
