@@ -3,10 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.oneg.maplocation">
 
-
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-
 
     <application
         android:allowBackup="true"
@@ -18,7 +16,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MapLocation"
         tools:targetApi="31">
-
+        <activity
+            android:name=".ConfirmActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PhoneActivity"
+            android:exported="false" />
         <!--
              TODO: Before you run your application, you need a Google Maps API key.
 
@@ -32,7 +35,7 @@
         -->
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyCJXhM_z8-RuMgMnC518aM-R6jX6ZLPB6g"/>
+            android:value="AIzaSyCJXhM_z8-RuMgMnC518aM-R6jX6ZLPB6g" />
 
         <activity
             android:name=".MapsActivity"
@@ -40,6 +43,7 @@
             android:label="@string/title_activity_maps">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
@@ -49,10 +53,10 @@
             android:label="@string/hello_blank_fragment">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
     </application>
 
 </manifest>

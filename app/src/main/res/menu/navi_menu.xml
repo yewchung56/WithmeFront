@@ -3,7 +3,6 @@
     <item
         android:id="@+id/homeFragment"
         android:title="홈화면"
-        
         android:icon="@drawable/ic_home_pressed"/>
     <item
         android:id="@+id/historyFragment"

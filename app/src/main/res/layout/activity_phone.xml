@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PhoneActivity">
+
+    <ImageButton
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_baseline_arrow_back_ios_24"
+        android:background="@android:color/transparent"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="46.33dp"/>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="139dp"
+        android:layout_height="45.25dp"
+        android:fontFamily="@font/notosanskr_bold"
+        android:text="회원정보입력"
+        android:textAlignment="center"
+        android:textColor="#373839"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="129.5dp"
+        tools:layout_editor_absoluteY="88.57dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="139dp"
+        android:layout_height="17dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="기본 정보를 입력해 주세요"
+        android:textAlignment="center"
+        android:textColor="#C2C2C2"
+        android:textSize="12sp"
+        tools:layout_editor_absoluteX="129dp"
+        tools:layout_editor_absoluteY="133dp" />
+
+
+    <TextView
+        android:layout_width="32dp"
+        android:layout_height="27dp"
+        android:fontFamily="@font/notosanskr_medium"
+        android:text="이름"
+        android:textAlignment="viewStart"
+        android:textColor="#373839"
+        android:textSize="12sp"
+        android:textStyle="normal"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="164dp" />
+
+    <EditText
+        android:id="@+id/input_name"
+        android:layout_marginTop="6dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:padding="12dp"
+        android:layout_width="332.7dp"
+        android:layout_height="44dp"
+        android:hint="성함을 입력해 주세요."
+        android:textSize="13sp"
+        app:layout_constraintCircleRadius="5dp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="197dp"
+        android:fontFamily="@font/notosanskr_medium"
+        android:includeFontPadding="false"
+        android:background="@drawable/gray_border"/>
+
+    <TextView
+        android:layout_width="67dp"
+        android:layout_height="27dp"
+        android:fontFamily="@font/notosanskr_medium"
+        android:text="휴대폰 번호"
+        android:textAlignment="viewStart"
+        android:textColor="#373839"
+        android:textSize="12sp"
+        android:textStyle="normal"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="248dp" />
+
+    <EditText
+        android:id="@+id/input_text_phone"
+        android:layout_marginTop="6dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:padding="12dp"
+        android:layout_width="246.04dp"
+        android:layout_height="44dp"
+        android:hint="'-'입력 제외"
+        android:fontFamily="@font/notosanskr_regular"
+        android:textSize="13sp"
+        app:layout_constraintCircleRadius="5dp"
+        android:textColor="#E0E0E0"
+        android:ems="10"
+        android:inputType="phone"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="281dp"
+        android:includeFontPadding="false"
+        android:background="@drawable/gray_border"/>
+
+    <Button
+        android:id="@+id/send_sms_btn"
+        android:layout_width="72dp"
+        android:layout_height="44dp"
+        android:background="#409C9C9C"
+        android:text="인증"
+        android:textAlignment="center"
+        android:textColor="#737373"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="271.75dp"
+        tools:layout_editor_absoluteY="281dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

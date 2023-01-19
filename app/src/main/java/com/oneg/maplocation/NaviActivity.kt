@@ -12,7 +12,7 @@ private const val TAG_NOTE = "note_fragment"
 private const val TAG_MYPG = "mypg_fragement"
 
 class NaviActivity : AppCompatActivity() {
-    private lateinit var binding : ActivityNaviBinding
+    private lateinit var binding: ActivityNaviBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -24,13 +24,14 @@ class NaviActivity : AppCompatActivity() {
         binding.navigationView.setOnItemSelectedListener { item ->
             when (item.itemId) {
                 R.id.homeFragment -> setFragment(TAG_HOME, HomeFragment())
-                R.id.historyFragment ->setFragment(TAG_HISTORY,HistoryFragment())
+                R.id.historyFragment -> setFragment(TAG_HISTORY, HistoryFragment())
                 R.id.noteFragment -> setFragment(TAG_NOTE, NoteFragment())
                 R.id.mypgFragment -> setFragment(TAG_MYPG, MypgFragment())
             }
             true
         }
     }
+
     private fun setFragment(tag: String, fragment: Fragment) {
         val manager: FragmentManager = supportFragmentManager
         val fragTransaction = manager.beginTransaction()
