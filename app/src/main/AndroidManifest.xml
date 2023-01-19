@@ -17,6 +17,9 @@
         android:theme="@style/Theme.MapLocation"
         tools:targetApi="31">
         <activity
+            android:name=".RecruitmentDetailActivity"
+            android:exported="false" />
+        <activity
             android:name=".ConfirmActivity"
             android:exported="false" />
         <activity
@@ -50,7 +53,8 @@
         <activity
             android:name=".NaviActivity"
             android:exported="true"
-            android:label="@string/hello_blank_fragment">
+            android:label="WithMe"
+            android:parentActivityName=".MapsActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

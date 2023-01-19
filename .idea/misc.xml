@@ -20,10 +20,11 @@
         <entry key="app/src/main/res/font/notosanskrmedium.xml" value="0.1935185185185185" />
         <entry key="app/src/main/res/layout/activity_confirm.xml" value="0.23645833333333333" />
         <entry key="app/src/main/res/layout/activity_maps.xml" value="0.17495987158908508" />
-        <entry key="app/src/main/res/layout/activity_navi.xml" value="0.4400909423828123" />
+        <entry key="app/src/main/res/layout/activity_navi.xml" value="0.2077575683593748" />
         <entry key="app/src/main/res/layout/activity_phone.xml" value="0.5647674560546875" />
+        <entry key="app/src/main/res/layout/activity_recruitment_detail.xml" value="0.14739583333333334" />
         <entry key="app/src/main/res/layout/fragment_history.xml" value="0.1" />
-        <entry key="app/src/main/res/layout/fragment_home.xml" value="0.24075622558593754" />
+        <entry key="app/src/main/res/layout/fragment_home.xml" value="0.36143798828125007" />
         <entry key="app/src/main/res/menu/navi_menu.xml" value="0.38810882568359373" />
       </map>
     </option>

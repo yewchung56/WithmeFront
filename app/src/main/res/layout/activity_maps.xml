@@ -6,18 +6,6 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="350dp"
-        android:src="@drawable/ic_baseline_arrow_back_ios_24"
-        map:layout_constraintBottom_toBottomOf="@+id/map"
-        map:layout_constraintEnd_toStartOf="@+id/textView2"
-        map:layout_constraintHorizontal_bias="0.14"
-        map:layout_constraintStart_toStartOf="parent"
-        map:layout_constraintTop_toTopOf="parent"
-        map:layout_constraintVertical_bias="0.456" />
 
     <LinearLayout
         android:id="@+id/linearLayout"
