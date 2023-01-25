@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MyPageActivity"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/txt_mypage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18.19dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:text="마이 페이지"
+            android:textSize="18sp"
+            android:textColor="#373839"
+            android:fontFamily="@font/notosanskr_bold"
+            android:includeFontPadding="false"/>
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/img_user"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:layout_constraintTop_toBottomOf="@id/txt_mypage"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="16.15dp"
+            android:layout_marginTop="15.67dp"
+            android:src="@drawable/img_writer_example" />
+        <TextView
+            android:id="@+id/txt_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginStart="8.78dp"
+            app:layout_constraintTop_toTopOf="@id/img_user"
+            app:layout_constraintStart_toEndOf="@id/img_user"
+            android:text="사용자"
+            android:textSize="15sp"
+            android:textColor="#373839"
+            android:fontFamily="@font/notosanskr_bold"
+            android:includeFontPadding="false"/>
+        <TextView
+            android:id="@+id/txt_user_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5.53dp"
+            app:layout_constraintTop_toBottomOf="@id/txt_user_name"
+            app:layout_constraintStart_toStartOf="@id/txt_user_name"
+            android:text="사용자 주소"
+            android:textSize="12sp"
+            android:textColor="#737373"/>
+
+        <ImageView
+            android:id="@+id/img_state"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="16.67dp"
+            app:layout_constraintTop_toTopOf="@id/img_user"
+            app:layout_constraintBottom_toBottomOf="@id/img_user"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:src="@drawable/state1"/>
+        <TextView
+            android:id="@+id/txt_reliability"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2.41dp"
+            android:layout_marginEnd="11.26dp"
+            app:layout_constraintTop_toTopOf="@+id/img_state"
+            app:layout_constraintEnd_toStartOf="@id/img_state"
+            android:text="위드미 신뢰도"
+            android:textSize="10sp"
+            android:textColor="#737373"
+            android:fontFamily="@font/notosanskr_medium"
+            android:includeFontPadding="false"/>
+        <TextView
+            android:id="@+id/txt_reliability_percentage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0.7dp"
+            app:layout_constraintStart_toStartOf="@id/txt_reliability"
+            app:layout_constraintTop_toBottomOf="@id/txt_reliability"
+            android:text="87.8%"
+            android:textSize="18sp"
+            android:textColor="#75DECD"/>
+
+        <Button
+            android:id="@+id/btn_show_profile"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10.19dp"
+            app:layout_constraintTop_toBottomOf="@id/img_user"
+            app:layout_constraintStart_toStartOf="@id/img_user"
+            app:layout_constraintEnd_toEndOf="@id/img_state"
+            android:text="프로필 보기"
+            android:textSize="12sp"
+            android:fontFamily="@font/notosanskr_medium"
+            android:includeFontPadding="false"/>
+
+        <Button
+            android:id="@+id/btn_review_list"
+            android:layout_width="102.75dp"
+            android:layout_height="65dp"
+            android:layout_marginTop="14.69dp"
+            android:layout_marginBottom="19.79dp"
+            android:background="@drawable/gray_border"
+            android:drawableBottom="@drawable/review_list"
+            android:text="후기 목록"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/btn_show_profile"
+            app:layout_constraintTop_toBottomOf="@id/btn_show_profile"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <Button
+            android:id="@+id/btn_my_team"
+            android:layout_width="102.75dp"
+            android:layout_height="65dp"
+            app:layout_constraintTop_toTopOf="@id/btn_review_list"
+            app:layout_constraintStart_toStartOf="@id/btn_show_profile"
+            app:layout_constraintEnd_toEndOf="@id/btn_show_profile"
+            android:text="내가 모임장"
+            android:textSize="12sp"
+            android:drawableBottom="@drawable/la_crown"
+            android:background="@drawable/gray_border"/>
+        <Button
+            android:id="@+id/btn_wishlist"
+            android:layout_width="102.75dp"
+            android:layout_height="65dp"
+            app:layout_constraintTop_toTopOf="@id/btn_review_list"
+            app:layout_constraintEnd_toEndOf="@id/btn_show_profile"
+            android:text="찜 목록"
+            android:textSize="12sp"
+            android:drawableBottom="@drawable/heart"
+            android:background="@drawable/gray_border"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <View
+        android:id="@+id/divider8"
+        android:layout_width="409dp"
+        android:layout_height="5.77dp"
+        android:background="?android:attr/listDivider"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="165dp" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/txt_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="17.67dp"
+            android:layout_marginStart="16.6dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:text="계정"
+            android:textSize="16sp"
+            android:textColor="#373839"
+            android:fontFamily="@font/notosanskr_bold"
+            android:includeFontPadding="false"/>
+        <ImageView
+            android:id="@+id/img_account_management"
+            android:layout_width="14.25dp"
+            android:layout_height="14.25dp"
+            android:layout_marginTop="20.06dp"
+            app:layout_constraintStart_toStartOf="@+id/txt_account"
+            app:layout_constraintTop_toBottomOf="@id/txt_account"
+            android:src="@drawable/management"/>
+        <Button
+            android:id="@+id/btn_account_management"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="1dp"
+            android:minHeight="1dp"
+            android:layout_marginStart="8.61dp"
+            app:layout_constraintTop_toTopOf="@id/img_account_management"
+            app:layout_constraintBottom_toBottomOf="@id/img_account_management"
+            app:layout_constraintStart_toEndOf="@id/img_account_management"
+            android:text="내 정보 관리"
+            android:textSize="14sp"
+            android:textColor="#373839"
+            android:fontFamily="@font/notosanskr_medium"
+            android:includeFontPadding="false"
+            android:background="@android:color/transparent" />
+
+        <View
+            android:id="@+id/divider9"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            app:layout_constraintTop_toBottomOf="@id/img_account_management"
+            app:layout_constraintStart_toStartOf="@id/img_account_management"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="17.85dp"
+            android:layout_marginEnd="17.09dp"
+            android:background="?android:attr/listDivider"
+            tools:layout_editor_absoluteY="76dp" />
+
+        <TextView
+            android:id="@+id/txt_etc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="17.64dp"
+            app:layout_constraintTop_toTopOf="@id/divider9"
+            app:layout_constraintStart_toStartOf="@id/divider9"
+            android:text="기타"
+            android:textSize="16sp"
+            android:textColor="#373839"
+            android:fontFamily="@font/notosanskr_bold"
+            android:includeFontPadding="false"/>
+        <Button
+            android:id="@+id/btn_FAQ"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minHeight="1dp"
+            android:minWidth="1dp"
+            android:layout_marginTop="20.41dp"
+            app:layout_constraintTop_toBottomOf="@id/txt_etc"
+            app:layout_constraintStart_toStartOf="@id/txt_etc"
+            android:background="@android:color/transparent"
+            android:text="자주 묻는 질문"
+            android:textSize="14sp"
+            android:textColor="#373839"
+            android:fontFamily="@font/notosanskr_medium"
+            android:includeFontPadding="false"/>
+        <Button
+            android:id="@+id/btn_inqury_terms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="1dp"
+            android:minHeight="1dp"
+            android:layout_marginTop="20.41dp"
+            app:layout_constraintTop_toBottomOf="@id/btn_FAQ"
+            app:layout_constraintStart_toStartOf="@id/btn_FAQ"
+            android:background="@android:color/transparent"
+            android:text="약관 조회"
+            android:textSize="14sp"
+            android:textColor="#373839"
+            android:fontFamily="@font/notosanskr_medium"
+            android:includeFontPadding="false"/>
+        <Button
+            android:id="@+id/btn_logout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="1dp"
+            android:minHeight="1dp"
+            android:layout_marginTop="20.41dp"
+            app:layout_constraintTop_toBottomOf="@id/btn_inqury_terms"
+            app:layout_constraintStart_toStartOf="@id/btn_inqury_terms"
+            android:background="@android:color/transparent"
+            android:text="로그아웃"
+            android:textSize="14sp"
+            android:textColor="#373839"
+            android:fontFamily="@font/notosanskr_medium"
+            android:includeFontPadding="false"/>
+        <Button
+            android:id="@+id/btn_membership_withdrawal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="1dp"
+            android:minHeight="1dp"
+            android:layout_marginTop="20.41dp"
+            app:layout_constraintTop_toBottomOf="@id/btn_logout"
+            app:layout_constraintStart_toStartOf="@id/btn_logout"
+            android:background="@android:color/transparent"
+            android:text="회원탈퇴"
+            android:textSize="14sp"
+            android:textColor="#373839"
+            android:fontFamily="@font/notosanskr_medium"
+            android:includeFontPadding="false"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
