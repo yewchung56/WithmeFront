@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">withme_recuitment_detail</string>
+    <string name="recruitment_detail_date">1/12 23:30</string>
+    <string name="recruitment_detail_title">우리은행 스터디 면접 구함당</string>
+    <string name="recruitment_detail_view">106</string>
+    <string name="recruitment_detail_note">5</string>
+    <string name="recruitment_detail_username">김써니</string>
+    <string name="recruitment_detail_region">강남구</string>
+    <string name="recruitment_detail_recruiting">모집 중</string>
+    <string name="recruitment_detail_field">스터디</string>
+    <string name="recruitment_detail_area">서울 송파구</string>
+    <string name="recruitment_detail_personnel">4~6명</string>
+    <string name="recruitment_detail_link">https://open.kakao.com/kdjfdkfj1</string>
+    <string name="recruitment_detail_heart_number">13</string>
+</resources>

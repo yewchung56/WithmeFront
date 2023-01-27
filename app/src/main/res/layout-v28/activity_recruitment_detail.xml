@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RecruitmentDetailActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/recruitment_detail_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#75DECD"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:minHeight="?attr/actionBarSize"
+        app:contentInsetStart="0dp">
+
+        <TextView
+            android:layout_width="78dp"
+            android:layout_height="23dp"
+            android:layout_marginTop="10.53dp"
+            android:text="모집글 상세"
+            android:fontFamily="@font/kr_font"
+            android:textFontWeight="700"
+            android:textSize="16sp"
+            android:textColor="#FFFFFF"
+            android:letterSpacing="-0.03"
+            android:includeFontPadding="false"
+            android:gravity="center"
+            android:layout_gravity="center"/>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/recruitment_detail_title"
+        android:layout_width="212.55dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="16.05dp"
+        android:layout_marginTop="68dp"
+        android:fontFamily="@font/kr_font"
+        android:includeFontPadding="false"
+        android:letterSpacing="-0.03"
+        android:text="@string/recruitment_detail_title"
+        android:textColor="#373839"
+        android:textFontWeight="700"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="117.87dp"
+        android:layout_height="12.1dp"
+        android:layout_marginStart="15.15dp"
+        android:layout_marginTop="98.95dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="48dp"
+            android:layout_height="12dp"
+            android:fontFamily="@font/eng_num_font"
+            android:includeFontPadding="false"
+            android:letterSpacing="-0.03"
+            android:text="@string/recruitment_detail_date"
+            android:textColor="#BBBBBB"
+            android:textSize="10sp" />
+
+        <ImageView
+            android:layout_width="10.08dp"
+            android:layout_height="6.88dp"
+            android:layout_marginStart="14.31dp"
+            android:layout_marginTop="1.06dp"
+            android:src="@drawable/ic_recruitment_detail_view" />
+
+        <TextView
+            android:layout_width="17dp"
+            android:layout_height="12dp"
+            android:layout_marginStart="1.67dp"
+            android:fontFamily="@font/eng_num_font"
+            android:includeFontPadding="false"
+            android:letterSpacing="-0.03"
+            android:text="@string/recruitment_detail_view"
+            android:textColor="#BBBBBB"
+            android:textSize="10sp" />
+
+        <ImageView
+            android:layout_width="9.05dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginStart="8.81dp"
+            android:adjustViewBounds="true"
+            android:background="@drawable/recruitment_detail_note"
+            android:elevation="4dp" />
+
+        <TextView
+            android:layout_width="6dp"
+            android:layout_height="12dp"
+            android:layout_marginStart="2.95dp"
+            android:fontFamily="@font/eng_num_font"
+            android:includeFontPadding="false"
+            android:text="@string/recruitment_detail_note"
+            android:textColor="#BBBBBB"
+            android:textSize="10sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="105.1dp"
+        android:layout_height="42.13dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="128.25dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/recruitment_detail_userphoto"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_recruitment_detail_photo" />
+
+        <TextView
+            android:layout_width="38dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="9.1dp"
+            android:fontFamily="@font/kr_font"
+            android:gravity="top"
+            android:includeFontPadding="false"
+            android:letterSpacing="-0.03"
+            android:text="@string/recruitment_detail_username"
+            android:textColor="#373839"
+            android:textSize="14dp" />
+
+        <ImageView
+            android:id="@+id/recruitment_detail_reliability"
+            android:layout_width="18dp"
+            android:layout_height="20dp"
+            android:elevation="4dp"
+            android:src="@drawable/ic_recruitment_detail_reliability" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/recruitment_detail_region"
+        android:layout_width="37.74dp"
+        android:layout_height="14.58dp"
+        android:layout_marginStart="60.44dp"
+        android:layout_marginTop="155.8dp"
+        android:alpha="8.37"
+        android:fontFamily="@font/kr_font"
+        android:gravity="center_horizontal|top"
+        android:includeFontPadding="false"
+        android:text="@string/recruitment_detail_region"
+        android:textColor="#737373"
+        android:textSize="10sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="22dp"
+        android:layout_height="17dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="187.06dp"
+        android:fontFamily="@font/kr_font"
+        android:gravity="center_horizontal|top"
+        android:includeFontPadding="false"
+        android:letterSpacing="-0.03"
+        android:text="분야"
+        android:textColor="#A3A5A4"
+        android:textFontWeight="400"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="22dp"
+        android:layout_height="17dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="208.04dp"
+        android:fontFamily="@font/kr_font"
+        android:gravity="center_horizontal|top"
+        android:includeFontPadding="false"
+        android:letterSpacing="-0.03"
+        android:text="지역"
+        android:textColor="#A3A5A4"
+        android:textFontWeight="400"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="22dp"
+        android:layout_height="17dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="229.01dp"
+        android:fontFamily="@font/kr_font"
+        android:gravity="center_horizontal|top"
+        android:includeFontPadding="false"
+        android:letterSpacing="-0.03"
+        android:text="인원"
+        android:textColor="#A3A5A4"
+        android:textFontWeight="400"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="33dp"
+        android:layout_height="17dp"
+        android:layout_marginStart="48.52dp"
+        android:layout_marginTop="187.06dp"
+        android:fontFamily="@font/kr_font"
+        android:gravity="center_horizontal|top"
+        android:includeFontPadding="false"
+        android:letterSpacing="-0.03"
+        android:text="@string/recruitment_detail_field"
+        android:textColor="#737373"
+        android:textFontWeight="400"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="57dp"
+        android:layout_height="17dp"
+        android:layout_marginStart="47.52dp"
+        android:layout_marginTop="208.04dp"
+        android:fontFamily="@font/kr_font"
+        android:gravity="center_horizontal|top"
+        android:includeFontPadding="false"
+        android:letterSpacing="-0.03"
+        android:text="@string/recruitment_detail_area"
+        android:textColor="#737373"
+        android:textFontWeight="400"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="33dp"
+        android:layout_height="17dp"
+        android:layout_marginStart="48.52dp"
+        android:layout_marginTop="229.01dp"
+        android:fontFamily="@font/kr_font"
+        android:gravity="center_horizontal|top"
+        android:includeFontPadding="false"
+        android:letterSpacing="-0.03"
+        android:text="@string/recruitment_detail_personnel"
+        android:textColor="#737373"
+        android:textFontWeight="400"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="22dp"
+        android:layout_height="17dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="261.98dp"
+        android:fontFamily="@font/kr_font"
+        android:gravity="center_horizontal|top"
+        android:includeFontPadding="false"
+        android:letterSpacing="-0.03"
+        android:text="링크"
+        android:textColor="#A3A5A4"
+        android:textFontWeight="400"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="172dp"
+        android:layout_height="14dp"
+        android:layout_marginStart="48.52dp"
+        android:layout_marginTop="263.48dp"
+        android:fontFamily="@font/eng_num_font"
+        android:gravity="center_horizontal|top"
+        android:includeFontPadding="false"
+        android:letterSpacing="-0.03"
+        android:text="https://open.kakao.com/kdjfdkfj1"
+        android:textColor="#737373"
+        android:textFontWeight="400"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="380dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="15.95dp"
+        android:layout_marginTop="297.56dp"
+        android:layout_marginEnd="16.05dp"
+        android:alpha="0.28"
+        android:background="@drawable/recruitment_detail_line"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="308dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="15.73dp"
+        android:layout_marginTop="312.22dp"
+        android:text="다다음주 우리은행 면접 스터디 팀원 구합니다!\n중간에 빠지지 않고 성실하게 임하실 분 구해요~\n자세한 계획은 같이 얘기해보면서 정하면 좋을 것 같아요\n관심있으신 분은 우선 쪽지 주세요!\n오픈채팅방 비번 알려드릴게요~~"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:fontFamily="@font/kr_font"
+        android:textFontWeight="400"
+        android:textSize="14sp"
+        android:letterSpacing="-0.03"
+        android:lineSpacingExtra="4sp"
+        android:translationY="-1.76sp"
+        android:gravity="top"
+        android:textColor="#373839"
+        android:includeFontPadding="false"
+        />
+
+    <CheckBox
+        android:id="@+id/recruitment_detail_heart"
+        android:layout_width="25dp"
+        android:layout_height="22.17dp"
+        android:layout_marginStart="21.38dp"
+        android:layout_marginBottom="38.6dp"
+        android:alpha="0.25"
+        android:background="@drawable/recruitment_detail_checked_heart"
+        android:button="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:onClick="onCheckboxClicked"/>
+
+    <TextView
+        android:id="@+id/recruitment_detail_heart_number"
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        android:layout_marginStart="27.88dp"
+        android:layout_marginBottom="24.25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="@string/recruitment_detail_heart_number"
+        android:fontFamily="@font/eng_num_font"
+        android:textColor="#8C8C8C"
+        android:gravity="center_horizontal|top"
+        android:textSize="10sp"/>
+
+    <android.widget.Button
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_marginStart="63.61dp"
+        android:layout_marginEnd="16.37dp"
+        android:layout_marginBottom="23.37dp"
+        android:background="@drawable/recruitment_detail_rectangle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="쪽지 보내기"
+        android:textColor="#FFFFFF"
+        android:fontFamily="@font/kr_font"
+        android:textFontWeight="500"
+        android:textSize="15sp"
+        android:letterSpacing="-0.03"
+        android:includeFontPadding="false"/>
+
+    <TextView
+        android:id="@+id/recruitment_detail_icon"
+        android:layout_width="47.37dp"
+        android:layout_height="22.79dp"
+        android:layout_marginTop="70.81dp"
+        android:layout_marginEnd="16.05dp"
+        android:background="@drawable/recruitment_detail_icon"
+        android:fontFamily="@font/kr_font"
+        android:includeFontPadding="false"
+        android:letterSpacing="-0.03"
+        android:text="@string/recruitment_detail_recruiting"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
