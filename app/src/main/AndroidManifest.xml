@@ -16,51 +16,44 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MapLocation"
         tools:targetApi="31">
-        <activity
-            android:name=".RecruitmentDetailActivity"
-            android:exported="false" />
+
         <activity
             android:name=".ConfirmActivity"
-            android:exported="false" />
-        <activity
-            android:name=".PhoneActivity"
-            android:exported="false" />
-        <!--
-             TODO: Before you run your application, you need a Google Maps API key.
+            android:exported="true" />
 
-             To get one, follow the directions here:
-
-                https://developers.google.com/maps/documentation/android-sdk/get-api-key
-
-             Once you have your API key (it starts with "AIza"), define a new property in your
-             project's local.properties file (e.g. MAPS_API_KEY=Aiza...), and replace the
-             "YOUR_API_KEY" string in this file with "${MAPS_API_KEY}".
-        -->
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="AIzaSyCJXhM_z8-RuMgMnC518aM-R6jX6ZLPB6g" />
 
         <activity
             android:name=".MapsActivity"
-            android:exported="true"
-            android:label="@string/title_activity_maps">
-            <intent-filter>
+            android:exported="true">
+          <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity
             android:name=".NaviActivity"
             android:exported="true"
-            android:label="WithMe"
             android:parentActivityName=".MapsActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity
+            android:name=".RecruitmentDetailActivity"
+            android:exported="true"
+            android:parentActivityName=".NaviActivity"
+            android:theme="@style/Theme.RecruitmentDetail">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
     </application>
 
 </manifest>

@@ -44,6 +44,7 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
         setContentView(binding.root)
 
         button.setOnClickListener {
+            Toast.makeText(this@MapsActivity, "${textView.text} 동네인증 성공!", Toast.LENGTH_SHORT).show()
             startActivity(Intent(this@MapsActivity,NaviActivity::class.java))
         }
 

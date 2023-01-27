@@ -10,12 +10,12 @@
                 android:width="2dp"
                 android:color="#46C1AD" />
             <corners
-                android:radius="10dp" />
+                android:radius="8dp" />
             <padding
                 android:left="10dp"
-                android:top="10dp"
+                android:top="5dp"
                 android:right="10dp"
-                android:bottom="10dp"/>
+                android:bottom="5dp"/>
         </shape>
     </item>
     <!-- pressed -->
@@ -32,9 +32,9 @@
                 android:radius="2dp" />
             <padding
                 android:left="10dp"
-                android:top="10dp"
+                android:top="5dp"
                 android:right="10dp"
-                android:bottom="10dp"/>
+                android:bottom="5dp"/>
         </shape>
     </item>
     <!-- focused -->
@@ -49,12 +49,12 @@
                 android:width="2dp"
                 android:color="#75DECD" />
             <corners
-                android:radius="10dp" />
+                android:radius="8dp" />
             <padding
                 android:left="10dp"
-                android:top="10dp"
+                android:top="5dp"
                 android:right="10dp"
-                android:bottom="10dp"/>
+                android:bottom="5dp"/>
         </shape>
     </item>
     <!-- default -->

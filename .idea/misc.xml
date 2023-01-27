@@ -3,14 +3,19 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="../../../../layout/custom_preview.xml" value="0.12110552763819095" />
         <entry key="app/src/main/res/drawable-v24/ic_baseline_arrow_back_ios_24.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/button_pattern.xml" value="0.1045" />
         <entry key="app/src/main/res/drawable/gray_border.xml" value="0.1525" />
+        <entry key="app/src/main/res/drawable/ic_baseline_arrow_forward_24.xml" value="0.1425" />
+        <entry key="app/src/main/res/drawable/ic_baseline_my_location_24.xml" value="0.1535" />
+        <entry key="app/src/main/res/drawable/ic_history_pressed.xml" value="0.1975" />
         <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.1045" />
         <entry key="app/src/main/res/drawable/ic_mypg_pressed.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/ic_note.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/layout_background.xml" value="0.1525" />
         <entry key="app/src/main/res/drawable/menu_click_color.xml" value="0.2615" />
+        <entry key="app/src/main/res/drawable/round_backgroud_border.xml" value="0.21" />
         <entry key="app/src/main/res/font/notosanskr_black.xml" value="0.1" />
         <entry key="app/src/main/res/font/notosanskr_bold.xml" value="0.11666666666666667" />
         <entry key="app/src/main/res/font/notosanskr_light.xml" value="0.1" />
@@ -19,12 +24,16 @@
         <entry key="app/src/main/res/font/notosanskr_thin.xml" value="0.1" />
         <entry key="app/src/main/res/font/notosanskrmedium.xml" value="0.1935185185185185" />
         <entry key="app/src/main/res/layout/activity_confirm.xml" value="0.23645833333333333" />
-        <entry key="app/src/main/res/layout/activity_maps.xml" value="0.17495987158908508" />
+        <entry key="app/src/main/res/layout/activity_maps.xml" value="0.25477142333984376" />
         <entry key="app/src/main/res/layout/activity_navi.xml" value="0.2077575683593748" />
         <entry key="app/src/main/res/layout/activity_phone.xml" value="0.5647674560546875" />
-        <entry key="app/src/main/res/layout/activity_recruitment_detail.xml" value="0.14739583333333334" />
+        <entry key="app/src/main/res/layout/activity_recruitment_detail.xml" value="0.14625854492187496" />
         <entry key="app/src/main/res/layout/fragment_history.xml" value="0.1" />
         <entry key="app/src/main/res/layout/fragment_home.xml" value="0.36143798828125007" />
+        <entry key="app/src/main/res/layout/fragment_mypg.xml" value="0.18432971014492755" />
+        <entry key="app/src/main/res/layout/fragment_note.xml" value="0.19713924632352944" />
+        <entry key="app/src/main/res/layout/list_users.xml" value="0.328804347826087" />
+        <entry key="app/src/main/res/layout/note_recycler_ex.xml" value="0.2640625" />
         <entry key="app/src/main/res/menu/navi_menu.xml" value="0.38810882568359373" />
       </map>
     </option>

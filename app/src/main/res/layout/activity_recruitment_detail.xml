@@ -1,38 +1,211 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--    <com.sothree.slidinguppanel.SlidingUpPanelLayout
-   xmlns:android="http://schemas.android.com/apk/res/android"
-   xmlns:app="http://schemas.android.com/apk/res-auto"
-   xmlns:tools="http://schemas.android.com/tools"
-   android:id="@+id/sliding_layout"
-   android:layout_width="match_parent"
-   android:layout_height="match_parent"
-   tools:context=".HomeFragment"
-   android:gravity="bottom"
-   android:background="@color/mint"
-   app:umanoPanelHeight="125dp"
-   app:umanoOverlay="true"
-   app:umanoShadowHeight="0dp"
-  app:umanoDragView="@id/recruit">
-  </com.sothree.slidinguppanel.SlidingUpPanelLayout>-->
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".RecruitmentDetailActivity">
-    <TextView
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/handle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+    <TextView
+        android:id="@+id/recruit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:gravity="center"
         android:text="모집상세정보"
-        android:textSize="16sp" />
+        android:textSize="16sp"
+        android:paddingBottom="100dp"/>
 
-    <TextView
+    </ScrollView>
+
+    <SlidingDrawer
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="center|top"
-        android:text="The Awesome Sliding Up Panel"
-        android:textSize="16sp" />
+        android:layout_height="wrap_content"
+        android:content="@+id/content"
+        android:handle="@+id/handle"
+        app:layout_constraintTop_toTopOf="@id/recruit">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/handle"
+                android:layout_width="360dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="100dp"
+                android:background="@drawable/button_pattern"
+                android:fontFamily="@font/notosanskr_medium"
+                android:text="모집 마감하기"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp"
+                android:textStyle="normal" />
+        </LinearLayout>
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="center">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0"
+                tools:layout_editor_absoluteX="16dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="32.98dp"
+                        android:fontFamily="@font/notosanskr_medium"
+                        android:text="모임기간"
+                        android:textColor="#373839"
+                        android:textSize="17sp"
+                        tools:layout_editor_absoluteX="16dp"
+                        tools:layout_editor_absoluteY="16dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="32.98dp"
+                        android:text="*"
+                        android:textColor="#D91B1B"
+                        tools:layout_editor_absoluteX="26dp"
+                        tools:layout_editor_absoluteY="16dp" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="32.98dp"
+                    android:fontFamily="@font/notosanskr_regular"
+                    android:text="모임 기간을 설정해주세요"
+                    android:textColor="#8C8C8C"
+                    android:textSize="13sp"
+                    tools:layout_editor_absoluteX="26dp"
+                    tools:layout_editor_absoluteY="16dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal"
+                    android:textAlignment="center">
+
+                    <Button
+                        android:id="@+id/calanderButton_create"
+                        android:layout_width="129dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/button_pattern"
+                        android:fontFamily="@font/notosanskr_regular"
+                        android:text="시작일"
+                        android:textColor="@color/white"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:id="@+id/imageView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/ic_baseline_arrow_forward_24" />
+
+                    <Button
+                        android:id="@+id/calanderButton_create2"
+                        android:layout_width="129dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="20dp"
+                        android:background="@drawable/button_pattern"
+                        android:fontFamily="@font/notosanskr_regular"
+                        android:text="마감일"
+                        android:textColor="@color/white"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/divider"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="?android:attr/listDivider" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="42.98dp"
+                        android:fontFamily="@font/notosanskr_medium"
+                        android:text="팀원 선정"
+                        android:textColor="#373839"
+                        android:textSize="17sp"
+                        tools:layout_editor_absoluteX="16dp"
+                        tools:layout_editor_absoluteY="16dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="32.98dp"
+                        android:text="*"
+                        android:textColor="#D91B1B"
+                        tools:layout_editor_absoluteX="26dp"
+                        tools:layout_editor_absoluteY="16dp" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="42.98dp"
+                    android:fontFamily="@font/notosanskr_regular"
+                    android:text="함께 할 팀원을 모두 선택해주세요."
+                    android:textColor="#8C8C8C"
+                    android:textSize="13sp"
+                    tools:layout_editor_absoluteX="26dp"
+                    tools:layout_editor_absoluteY="16dp" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rv_list"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="1.0"></androidx.recyclerview.widget.RecyclerView>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="47dp"
+                    android:background="@drawable/button_pattern"
+                    android:text="완료" />
+
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </SlidingDrawer>
+</androidx.appcompat.widget.LinearLayoutCompat>

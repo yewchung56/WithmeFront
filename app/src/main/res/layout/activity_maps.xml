@@ -6,7 +6,6 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-
     <LinearLayout
         android:id="@+id/linearLayout"
         android:layout_width="wrap_content"
@@ -24,32 +23,16 @@
         android:name="com.google.android.gms.maps.SupportMapFragment"
         android:layout_width="match_parent"
         android:layout_height="300dp"
-        android:layout_marginBottom="128dp"
+        android:layout_marginBottom="256dp"
         map:layout_constraintBottom_toBottomOf="parent"
         map:layout_constraintEnd_toEndOf="parent"
         map:layout_constraintHorizontal_bias="0.0"
         map:layout_constraintStart_toStartOf="parent"
         map:layout_constraintTop_toTopOf="parent"
         map:layout_constraintVertical_bias="0.432"
-        tools:context=".MapsActivity"></fragment>
+        tools:context=".MapsActivity">
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="134dp"
-        android:layout_height="63.68dp"
-        android:layout_marginBottom="32dp"
-        android:text="@string/동네인증"
-        android:fontFamily="@font/notosanskr_bold"
-        android:textAlignment="center"
-        android:textColor="#373839"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        map:layout_constraintBottom_toTopOf="@+id/map"
-        map:layout_constraintEnd_toEndOf="parent"
-        map:layout_constraintHorizontal_bias="0.498"
-        map:layout_constraintStart_toStartOf="parent"
-        map:layout_constraintTop_toBottomOf="@+id/linearLayout"
-        map:layout_constraintVertical_bias="0.846" />
+    </fragment>
 
     <TextView
         android:id="@+id/textView3"
